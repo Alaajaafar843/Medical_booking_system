@@ -1,0 +1,143 @@
+body { 
+    background-image: linear-gradient(
+        to bottom, 
+        #117DBC 0%,
+        #117DBC 20%,
+        #fff 20%,
+        #fff 100%
+    );
+    min-height: 100vh;
+}
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h1 { 
+    color: #fff;
+    padding-top: 100px;
+    margin-left: 50px;
+    text-transform: uppercase
+}
+.h2 { 
+    color: #fff;
+    padding-top: 100px;
+    margin-right: 40px;
+}
+.infoR { 
+    margin-left: 30px;
+    
+}
+.wrapper1 { 
+    float: left;
+ 
+}
+.wrapper2 { 
+    float: right;
+    margin-right: 20px;
+}
+hr { 
+    width:50%; 
+    margin-left:25% !important; 
+    margin-right:25% !important
+}
+.center { 
+    margin-left: auto;
+    margin-right: auto;
+}
+table, tr, th, td { 
+    border: 0px solid black;
+    padding: 0 80px 0 80px;
+} 
+td {
+    padding-top: 25px;
+    text-align: center;
+ }
+ th { 
+     text-transform: uppercase;
+ }
+ .bot { 
+     background-color: #42A7E2BA;
+     float: left;
+     width: 70%;
+ }
+ .bot2 { 
+     float: right;
+     width: 30%;
+     background-color: #117DBC;
+     text-align: right;
+     font-size: 24px;
+     padding: 30px 80px 20px 20px;
+     color: #fff;
+ }
+ .nbr { 
+     font-size: 32px;
+ }
+ .not { 
+     font-size: 24px;
+     color: #fff;
+     padding: 30px 0px 68px 80px;
+ }
+.backbtn { 
+    background-color: #117DBC;
+    color: white;
+    padding: 20px 70px 20px 70px;
+    border-radius: 50px;
+    border: 0px solid;
+    font-size: 36px;
+    float: right;
+    margin: 90px 40px 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+.backbtn:hover { 
+    transform: scale(1.1);
+}
+.img1 { 
+    width: 159px;
+}
+.logof { 
+    color:#9F9F9F;
+    margin-top: 10px
+}
+@media screen and (max-width: 500px){ 
+    .h2 { 
+        padding-top: 150px;
+        margin-right: -100%;
+    }
+    .wrapper2 { 
+        margin-right: -110%;
+    }
+    .bot { 
+        width: 110%;
+        
+    }
+    .bot2 { 
+        width: 120%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: -80%;
+        margin-top: .2%;
+        padding-right: 50%;
+        position: absolute;
+    }
+    footer { 
+        display: none;
+    }
+    .backbtn { 
+        margin: 90px 40px 40px 150px;
+        margin-right:-100%;
+        margin-top: 40%;
+        
+    }
+    .h1 { 
+        padding-top: 150px;
+    }
+    hr { 
+        width: 100%;
+        margin-right: -30%;
+    }
+    table, tr, th, td { 
+        padding: 10px 60px 0 60px;
+    } 
+}
+
