@@ -1,0 +1,172 @@
+body { 
+    background-image: linear-gradient(
+        to bottom, 
+        #117DBC 0%,
+        #117DBC 40%,
+        #fff 40%,
+        #fff 100%
+    );
+    min-height: 100vh;
+}
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo { 
+    cursor: pointer;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 800;
+}
+nav ul { 
+    list-style: none;
+}
+nav ul li { 
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+}
+nav ul li a:hover { 
+    color: rgb(165, 160, 160);
+}
+nav ul li a { 
+    color: #fff;
+    text-decoration: none;
+    padding-left: 13px;
+}
+section { 
+    border: 0px solid gray;
+    height: 90vh;
+
+}
+.container { 
+    border: 0px solid gray;
+    box-shadow: 3px 8px 10px rgb(163, 161, 161);
+    max-width: 30%;
+    margin: auto;
+    height: 70vh;
+    background-color: #fff;
+    margin-top: 60px;
+    border-radius: 35px;
+}
+h2 { 
+    text-align: center;
+    font-weight: bold;
+    color: #117DBC;
+    font-family: 'inter';
+}
+.lab { 
+    padding-left: 8%;
+    color: #818080;
+    font-weight: 500;
+}
+.inpt { 
+    width: 80%;
+    padding-left: 20px;
+    margin-left: 5%;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    margin-top: 1%;
+}
+textarea { 
+    width: 80%;
+    padding-left: 20px;
+    margin-left: 5%;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    margin-top: 1%;
+    height: 25%;
+}
+.btn { 
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 40%;
+    margin-top: 5%;
+    color: white;
+    background-color: #FB9700;
+    border: 0px solid;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+    font-family: 'inter';
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.btn:hover { 
+    transform: scale(1.1);
+}
+.img1 { 
+    width: 159px;
+}
+.logof { 
+    color:#9F9F9F;
+
+}
+.footersocail { 
+    display: inline-block;
+    color: #818080;
+}
+footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img2 { 
+    width: 159px;
+    margin-bottom: -5px;
+}
+#toggle { 
+    display: none;
+}
+.check { 
+    font-size: 26px;
+    display: none;
+}
+@media screen and (max-width: 500px){ 
+    .container { 
+        max-width: 80%;
+        height: 80vh;
+    }
+    .btn { 
+        margin-bottom: 4%;
+    }
+    .logof {    
+        font-size: 12px;
+    }
+    .img1 { 
+        width: 80px;
+    }
+    .img2 { 
+        width: 100px;
+        margin-bottom: -2%;
+    }
+    .check { 
+        display: block;
+        float: right;
+        margin-top: -3%;
+        cursor: pointer;
+        margin-left: 89%;
+        position: absolute;
+    }
+    .logo { 
+        font-size: 15px;
+    }
+   .nav  { 
+    display: none;
+   }
+   nav ul li a { 
+       font-size: 15px;
+       display: inline-block;
+       margin-right: -10%;
+       padding: 0px 10px;
+   }
+   #toggle:checked ~ .nav ul { 
+       display: block;
+   }
+}
