@@ -34,7 +34,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 150vh;
 }
 .form{
   width: 550px;
@@ -192,7 +192,7 @@ h1{
 .form__input3:focus{
   border: 1.5px solid var(--first-color);
 }
-.form__input3:not(:placeholder-shown).form__input2:not(:focus)+ .form__label2{
+.form__input3:not(:placeholder-shown).form__input3:not(:focus)+ .form__label3{
   top: -.5rem;
   left: .8rem;
   font-size: var(--small-font-size);
@@ -212,7 +212,7 @@ h1{
     font-size: 30px;
     font-weight: bold;
     font-family: montserrat;
-    padding-left: 200px;
+    padding-left: 190px;
 }
 img{
   margin-left: 65px;
@@ -225,3 +225,102 @@ img{
 .position_have_account{
   margin-left:260px;
 }
+/*@media (max-width:550px){
+  img{
+    margin-left: 48px;
+  }
+  .form__input{
+    width:40%
+  }
+  .form__input2{
+    width: 40%;
+  }
+  .form__input3{
+    width:91%;
+  }
+  .position_have_account{
+    margin-left:210px;
+  }
+  .Sign_Up{
+      padding-left: 175px;
+  }
+  }
+  */
+  @media (max-width:550px){
+    img{
+      margin-left: 48px;
+    }
+    .form__input{
+      width:40%
+    }
+    .form__input2{
+      width: 40%;
+      margin-left: 250px;
+
+    }
+    .form__input3{
+      width:91%;
+    }
+    .position_have_account{
+      margin-left:210px;
+    }
+    .Sign_Up{
+        padding-left: 170px;
+    }
+    .form__label2{
+      margin-left: 250px;
+      
+    }
+    }
+  @media (max-width:500px){
+    img{
+      margin-left: 16px;
+    }
+    .form__input{
+      width:40%
+    }
+    .form__input2{
+      width: 40%;
+      margin-left: 195px;
+
+    }
+    .form__input3{
+      width:91%;
+    }
+    .position_have_account{
+      margin-left:210px;
+    }
+    .Sign_Up{
+        padding-left: 120px;
+    }
+    .form__label2{
+      margin-left: 195px;
+      
+    }
+    }
+    @media (max-width:375px){
+      img{
+        margin-left: 16px;
+      }
+      .form__input{
+        width:45%
+      }
+      .form__input2{
+        width: 45%;
+        margin-left: 175px;
+  
+      }
+      .form__input3{
+        width:91%;
+      }
+      .position_have_account{
+        margin-left:210px;
+      }
+      .Sign_Up{
+          padding-left: 120px;
+      }
+      .form__label2{
+        margin-left: 175px;
+        
+      }
+      }
