@@ -17,7 +17,8 @@ a{
     border-radius: 8px;
 }
 .br-20{
-    border-radius: 12px;
+    border-radius: 20px;
+    
 }
 
 .size-10{
@@ -25,7 +26,7 @@ a{
 }
 
 .shadow{
-    box-shadow: 14px 30px 70px 18px rgba(0,0,0,0.4); 
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.4) !important; 
 }
  
 .my-6{
@@ -33,12 +34,12 @@ a{
     margin-bottom: 7%;
 }
 
-bg-color{
+.bg-color{
     background-color: #117dbc;
     color: white;
 }
 a:hover{
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .bg{
@@ -70,13 +71,53 @@ a:hover{
     font-size: 13px;
 
 }
-.btn:hover{
-    padding: 1%;
-}
 
 
 .w-60{
     width: 40%;
 }
+
+@media only screen and (min-width: 500px) {
+   .container{
+       margin-left: 6%; 
+
+   }
+    .w-xs-80{
+        width : 80%
+    }
+}    
+
+@media only screen and (min-width: 700px) {
+     .w-md-45{
+         width : 45%;
+     }
+     
+ }
+@media (min-width:1400px){
+    .container{
+        margin-left:9%;
+    }
+    
+}
+
+img{
+    border: 5px solid #117dbc;
+}
+
+
+.card{
+    display: none;
+}
+ 
+
+
+
+
+
+
+
+
+
+
 
 
