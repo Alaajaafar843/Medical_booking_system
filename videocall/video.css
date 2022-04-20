@@ -85,16 +85,26 @@ table{
     font-size: 25px;
     margin-right: 2%;
 }
+.btn-back:hover{
+    font-size: 30px;
+    font-weight: bold;
+}
+
 
 .btn-pay{
     background-color: #117dbc;
     color: white;
     border-radius: 100px;
-    padding: 0.5% 3.5%;
+    padding: 0.5% 3%;
     border-color: #117dbc;
     outline: none;
     border: none;
+    font-size: 20px;
+}
+.btn-pay:hover{
+    padding: 0.75% 3.25%;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .button{
@@ -109,7 +119,10 @@ table{
 }
 .table{
     width: 90%;
+    border: 2px solid  rgb(247, 196, 191);
+
 }
+
 .form{
     margin-left: 6%;
 }
@@ -143,7 +156,3 @@ main{
 .table{
     border-radius: 10px;
 }
-
-
-
-

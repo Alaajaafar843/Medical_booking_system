@@ -108,6 +108,17 @@ img{
 .card{
     display: none;
 }
+
+.card:hover{
+    box-shadow:5px 12px 20px 7px rgba(16, 57, 118, 0.4) !important; 
+   
+    
+}
+.hover:hover{
+    transform: scale(1.1);
+    
+}
+
  
 
 

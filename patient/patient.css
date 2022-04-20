@@ -26,15 +26,10 @@ a{
 .containerr{
     width: 100%;
     margin:4% 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  
    
     
     
-   }
-   .bg{
-       background-color: #117dbc;
    }
 
 .profile-box{
@@ -49,14 +44,14 @@ a{
 }
 .profile-pic{
     width: 150px;
-    
+    border: 50%;
     background: #fff;
     padding: 6px;
     margin-top: 40px;
 }
 img{
     border-radius: 50%;
-    
+    border: -50px solid white;
     
 }
 .profile-bottom{
@@ -106,7 +101,7 @@ p{
 }
 .btn{
     margin-left: 70%;
-    background-color:#117dbc;
+    background-color: #117dbc;
     color: white;
     border-radius: 20px;
     border: none;
