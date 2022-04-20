@@ -80,7 +80,7 @@
 }
 .dr-cards {
     position: relative;
-    top: -400px;
+    top: -430px;
 }
 
 .card{
@@ -250,6 +250,7 @@ hr{
 }
 .about {
     color: white;
+    padding: 15px;
 }
 
 .footer {
@@ -415,6 +416,10 @@ hr{
         padding: 10px;
         margin-top: 20px;
         font-weight: bold;
+    }
+    .dr-cards {
+        position: relative;
+        top: -415px;
     }
   
 }
