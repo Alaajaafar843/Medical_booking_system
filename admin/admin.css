@@ -102,7 +102,20 @@
   #myChart , #myChart1 {
     padding: 15px;
   }
+  table span .fa-trash{
+    color: red;
+    padding: 5px;
+    font-size: larger;
+  }
+  table span .fa-bars{
+    color: green;
+    padding: 5px;
+    font-size: larger;
+  }
   
+  table tr:nth-child(even){
+    background-color: #eee;
+  }
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
     .sidebar {
