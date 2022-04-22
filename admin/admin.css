@@ -94,6 +94,14 @@
   .card-text li span .fa-bars:hover{
     transform: scale(1.2);
   }
+  .title-dash {
+    text-align: center;
+    padding: 15px;
+    color: #8a8a8a;
+  }
+  #myChart , #myChart1 {
+    padding: 15px;
+  }
   
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
@@ -115,6 +123,9 @@
     }
     .card-text li {
       padding: 10px;
+    }
+    #myChart{
+      height: 300px;
     }
   }
   
