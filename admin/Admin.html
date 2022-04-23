@@ -13,12 +13,14 @@
     <!-- The sidebar -->
 <div class="sidebar">
     <div class="dropdown">
-        <a class="active" onmouseover="myFunction()" class="dropbtn">User</a>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#"> <i class="fa fa-user" aria-hidden="true"></i> Profile</a>
-          <a href="#"> <i class="fa fa-plane" aria-hidden="true"></i> Visite Website</a>
-          <a href="#"> <i class="fa fa-power-off" aria-hidden="true"></i> LOG OUT</a>
-        </div>
+        <a class="active dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          User
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+          <li><a class="dropdown-item" href="#"><i class="fa fa-plane" aria-hidden="true"> Visit site</i></a></li>
+          <li><a class="dropdown-item" href="#"><i class="fa fa-power-off" aria-hidden="true"></i> Log out</a></li>
+        </ul>
       </div>
     <a href="Admin.html">Dashboard</a>
     <a href="ManageDoctors.html">Doctors</a>
@@ -41,7 +43,7 @@
         <div class="col-sm stat-card" style="background-color: cadetblue;">
            <i class="fa fa-comments" aria-hidden="true"></i> Feedbacks
            <br>
-           <span>15</span>
+           <span><a href="Feedbacks.html">15</a></span>
         </div>
     </div>
 
@@ -83,7 +85,7 @@
                <ul class="card-text">
                     <li>
                         Alaa Jaafar
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i></span>
+                        <span><a href="" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a> <a href="Edit_dr.html"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
                     </li>
                     <li>
                         Mahdi roumani
@@ -104,6 +106,34 @@
                </ul>
             </div>
         </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm card">
+        <h5 class="card-title"><i class="fa fa-commenting" aria-hidden="true"></i> Last 5 Feedbacks</h5>
+       <div class="card-body">
+         <div id="comment-box">
+           Hello how are you doing? <br />How are the kids ?
+           <h5 class="user-cmnt">Alaa Jaafar</h5>
+        </div>
+         <div id="comment-box">
+           Hello how are you doing? <br />How are the kids ?
+           <h5 class="user-cmnt">Alaa Jaafar</h5>
+        </div>
+         <div id="comment-box">
+           Doctor Mahdi is great <br />I recommend him
+           <h5 class="user-cmnt">Hassan chakkour</h5>
+        </div>
+         <div id="comment-box">
+           Hello how are you doing? <br />How are the kids ?
+           <h5 class="user-cmnt">Ali malla</h5>
+        </div>
+         <div id="comment-box">
+           Hello how are you doing? <br />How are the kids ?
+           <h5 class="user-cmnt">Mahdi roumani</h5>
+        </div>
+       </div>
+      </div>
     </div>
 
     <div class="row">
@@ -167,13 +197,8 @@ new Chart("myChart1", {
 });
 
 function myFunction() {
-    document.getElementById("myDropdown").style.display = "block";
-}
-function myFunction1() {
-    document.getElementById("myDropdown").style.display = "none";
-}
-
-window.onclick
+             alert("Are you sure ?");
+         }
   </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

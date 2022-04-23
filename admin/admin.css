@@ -53,6 +53,10 @@
       position: relative;
       top: 30px;
   }
+  .stat-card a {
+    text-decoration: none;
+    color: white;
+  }
   .card {
     width: 550px;
     margin: 25px;
@@ -111,6 +115,10 @@
     padding: 5px;
     font-size: larger;
   }
+  table span .fa-power-off{
+    padding: 5px;
+    font-size: larger;
+  }
   
   table tr:nth-child(even){
     background-color: #eee;
@@ -132,8 +140,41 @@
     padding: 5px;
     margin: 5px;
   }
-  .dropdown-content{
-    display: none;
+ 
+  .dropdown-menu{
+    width: 100%;
+  }
+  .card h5 {
+    margin: 10px;
+  }
+  #comment-box {
+    background-color: #e8e8e8;;
+    position: relative;
+    padding: 20px;
+    color: black;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    width: 90%;
+  }
+  
+  #comment-box::after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    bottom: -25px;
+    left: 90%;
+    background-color: #e8e8e8;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    margin-bottom: 10px;
+  }
+
+  #comment-box .user-cmnt {
+    float: right;
+  }
+  #comment-box:hover{
+    transform: scale(1.1);
   }
   
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -160,6 +201,17 @@
     #myChart{
       height: 300px;
     }
+    #comment-box {
+      font-size: smaller;
+    }
+
+    #comment-box h5 {
+      font-size: smaller;
+    }
+
+    .sidebar a {
+      font-size: small;
+    }
   }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -174,5 +226,16 @@
     form .sub {
       width: 100%;
       margin: auto;
+    }
+
+    #comment-box {
+      font-size: smaller;
+    }
+
+    #comment-box h5 {
+      font-size: smaller;
+    }
+    .sidebar a {
+      font-size: small;
     }
   }

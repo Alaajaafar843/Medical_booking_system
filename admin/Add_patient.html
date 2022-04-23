@@ -11,7 +11,17 @@
 </head>
 <body>
     <div class="sidebar">
-        <a class="active" href="Admin.html">Dashboard</a>
+        <div class="dropdown">
+            <a class="active dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              User
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-plane" aria-hidden="true"> Visit site</i></a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-power-off" aria-hidden="true"></i> Log out</a></li>
+            </ul>
+          </div>
+        <a href="Admin.html">Dashboard</a>
         <a href="ManageDoctors.html">Doctors</a>
         <a href="ManagePatients.html">Patients</a>
         <a href="Appointements.html">Appointements</a>
