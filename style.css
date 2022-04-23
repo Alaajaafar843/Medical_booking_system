@@ -250,7 +250,7 @@ hr{
 }
 .about {
     color: white;
-    padding: 15px;
+    padding: 35px;
 }
 
 .footer {
@@ -259,6 +259,16 @@ hr{
 
 .cont {
     height: 100vh;
+}
+
+.table th {
+    background-color: #117DBC;
+    color: white;
+}
+.table span .btn-warning {
+    
+    color: white;
+
 }
 
 @media only screen and (max-width: 500px){
@@ -400,7 +410,7 @@ hr{
     }
 
     .dr-card{
-        transform: scale(0.8);
+        transform: scale(0.7);
         margin: auto;
     }
     .about {
@@ -408,7 +418,7 @@ hr{
         text-align: center;
     }
     .about h2 {
-        color: white;
+        color: #117DBC;
     }
     .about p {
         color: #117DBC;
@@ -429,8 +439,6 @@ hr{
         width: 300px;
         height: 240px;
         box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-        margin: auto;
-        left: 1px;
         margin-bottom: 25px;
         border-radius: 10px;
     }

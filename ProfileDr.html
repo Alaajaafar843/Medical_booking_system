@@ -39,7 +39,7 @@
 
     <div class="conatiner dr-cards">
         <div class="row main">
-            <div class="col">
+            <div class="col-sm">
                 <div class="dr-card">
                     <div class="row">
                      <div class="col">
@@ -60,7 +60,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col about">
+            <div class="col-sm mt-5 about">
                 <h2>About me</h2>
                 <p>I became a pediatric and fetal surgeon because I love
                     children and I had amazing and inspirational mentors.
@@ -70,6 +70,57 @@
                     to me in a serious health crisis a few years ago.The patient does not speak English and, unfortunately,
                     my ability to speak the patient's native language .
                 </p>
+            </div>
+        </div>
+
+        <div class="row mt-5 p-5">
+            <div class="col-sm">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                          <th>Patient Name</th>
+                          <th>D & T</th>
+                          <th>Appointement Reason</th>
+                          <th>Type</th>
+                          <th>Accept / Decline</th>
+                        </tr>
+                        <tr>
+                          <td>Patient A</td>
+                          <td id="date1"></td>
+                          <td>Broken nose</td>
+                          <td>Clinic</td>
+                          <td><span><a href="" class="btn btn-primary m-2">Accepted</a></span><span><a class="btn btn-warning" href="">Modify</a></span></td>
+                        </tr>
+                        <tr>
+                          <td>Patient A</td>
+                          <td id="date2"></td>
+                          <td>Broken nose</td>
+                          <td>Clinic</td>
+                          <td><span><a href="" class="btn btn-primary m-2">Accepted</a></span><span><a class="btn btn-warning" href="">Modify</a></span></td>
+                        </tr>
+                        <tr>
+                          <td>Patient A</td>
+                          <td id="date3"></td>
+                          <td>Broken nose</td>
+                          <td>Clinic</td>
+                          <td><span><a href="" class="btn btn-primary m-2">Accepted</a></span><span><a class="btn btn-warning" href="">Modify</a></span></td>
+                        </tr>
+                        <tr>
+                          <td>Patient A</td>
+                          <td id="date4"></td>
+                          <td>Broken nose</td>
+                          <td>Clinic</td>
+                          <td><span><a href="" class="btn btn-primary m-2">Accepted</a></span><span><a href="" class="btn btn-warning">Modify</a></span></td>
+                        </tr>
+                        <tr>
+                          <td>Patient A</td>
+                          <td id="date5"></td>
+                          <td>Broken nose</td>
+                          <td>Clinic</td>
+                          <td><span><a href="" class="btn btn-primary m-2">Accepted</a></span><span><a href="" class="btn btn-warning">Modify</a></span></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
         <div class="row footer">
@@ -108,6 +159,12 @@
         </div>
     </div>
    </div>
+   <script>
+     let date = new Date().toLocaleDateString();
+         for(i=1 ; i<=5 ;i++){
+             document.getElementById("date"+i).innerHTML = date;
+         }
+   </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
