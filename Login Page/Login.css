@@ -129,7 +129,7 @@ margin-top: 20px;
   cursor: pointer;
   transition: .3s;
   font-weight:bold;
-  margin-top: 10px;
+  margin-top: -55px;
 }
 .form__button:hover{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
@@ -169,11 +169,12 @@ img{
     margin-left: 45px;
     cursor: pointer;
 }
-.position_please{
-    font-size: 15;
+.position_sign{
+  color:#117DBC;
+    font-size: 20;
+    font-weight: bold;
     font-family: montserrat;
-    font-weight:bold;
-    margin-left: 46px;
+    padding-left: 190px;
 }
 .position_hello{
     color:#117DBC;
