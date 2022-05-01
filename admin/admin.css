@@ -74,9 +74,9 @@
   .card-text li {
     padding: 7px;
   }
-  .card li:hover{
+  /* .card li:hover{
     transform: scale(1.1);
-  }
+  } */
   .card-text li span{
     float: right;
   }
@@ -175,9 +175,9 @@
   #comment-box .user-cmnt {
     float: right;
   }
-  #comment-box:hover{
+  /* #comment-box:hover{
     transform: scale(1.1);
-  }
+  } */
   
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
