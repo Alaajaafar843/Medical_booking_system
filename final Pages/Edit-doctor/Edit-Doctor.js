@@ -159,8 +159,7 @@ var stateObject = {
         "Baabda": ["Aaraiya ", "Aarbaniyeh", "Ain Er Roummaneh (Chiyah) ", "Ain Mouaffaq", "Arsoun", "Baabda", "Baalchmay ", "Bmaryam ", "Borj El Brajneh ", "Boutchay", "Bsaba (Baabda)", "Btekhnay", "Btibyat ", "Bzebdine", "Chbaniyeh ", "Chiyah", "Chouit", "Deir El Harf", "Deir Khouna ", "Deir Mar Elias Kahlouniyeh", "Dlaybeh ", "Falougha", "Fayadiyeh ", "Furn Ech Chebbak", "Ghbayreh", "Hadath (Baabda) ", "Hammana ", "Haret El Botm ", "Haret Es Sitt ", "Haret Hamzeh", "Haret Hreik ", "Hasbaiya El Matn", "Hazmiyeh (Baabda) ", "Hlaliyeh (Baabda) ", "Jouar El Haouz", "Jouret Arsoun ", "Kfar Chima", "Kfar Selouane ", "Khalouat Falougha ", "Khreibeh (Baabda) ", "Kneisseh (Baabda) ", "Laylakeh", "Louayzeh", "Merdacheh ", "Mreijeh ", "Ouadi Chahrour El Aaoulia ", "Ouadi Chahrour Es Soufla", "Qalaa (Baabda)", "Qobbayaa", "Qornayel", "Qortada ", "Qrayeh (Baabda) ", "Qsaibeh (Baabda)", "Qtaleh (Baabda) ", "Ras El Harf ", "Ras El Matn ", "Rouaysset El Ballout", "Salima (Baabda) ", "Sibnay", "Tahouitat El Ghadir ", "Tahouitet En Nahr ", "Tarchich", "Zandouqa"],
 
 
-        "Baalbak": [ "Aallaq Et Tell", "Aansar (Baalbek)", "Aaqidiyeh", "Aarsal", "Aaynata (Baalbek)", "Ain (Baalbek)", "Ain Bourday", "Ain Es Saouda","Baalbek", "Barqa", "Bechouat", "Bednayel (Baalbek)", "Beit Chama", "Bouday","Brital",
-            "Btedaai",
+        "Baalbak": [ "Aallaq Et Tell", "Aansar (Baalbek)", "Aaqidiyeh", "Aarsal", "Aaynata (Baalbek)", "Ain (Baalbek)", "Ain Bourday", "Ain Es Saouda","Baalbek", "Barqa", "Bechouat", "Bednayel (Baalbek)", "Beit Chama", "Bouday","Brital", "Btedaai",
             "Chaat",
             "Chlifa",
             "Chmistar",

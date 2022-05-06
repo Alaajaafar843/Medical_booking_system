@@ -57,7 +57,7 @@ a{
 
 }
 
- img{
+ .card img{
      width: 50%;
      height: 50%; 
      margin:10% 25%; 
@@ -453,4 +453,15 @@ input[type="datetime-local"]{
 
 
 
-  
+.logof { 
+    color: rgb(173, 165, 165);
+}
+.footersocail { 
+    display: inline-block;
+    color: #818080;
+}
+footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

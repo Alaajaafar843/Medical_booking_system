@@ -10,9 +10,7 @@
     box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
     margin: 20px 40px;
 }
-.footer-logo{
-    width: 50%;
-}
+
 
 .container-fluid{
     margin-left: 3%;
@@ -58,13 +56,13 @@
      background-color: #8dc9eb;
     color: white !important; 
    }
-img{
+.card  img{
     border: 5px solid #117dbc;
 }
 .footer-logo{
     border: none !important;
 }
-img:hover{
+.card-image img:hover{
     transform: scale(1.2);
     transition: 0.5s;
 }
@@ -95,8 +93,8 @@ img:hover{
     width: 40%;
 }
 
-img{
-    width:100%;
+.card img{
+    width:100% !important;
     height: 80% !important;
 }
 
@@ -175,4 +173,23 @@ a:hover{
 .rating-css label:active{
     transform: scale(0.8);
     transition: 0.9 ease;
+}
+
+
+.img1 , .img2{
+    border: none;
+}
+
+
+.logof { 
+    color: rgb(173, 165, 165);
+}
+.footersocail { 
+    display: inline-block;
+    color: #818080;
+}
+footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

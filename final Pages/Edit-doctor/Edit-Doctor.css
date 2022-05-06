@@ -318,6 +318,22 @@ iframe{
     border: 2px solid green !important;
 }
 
-.birder-black{
+.border-black{
     border: 2px solid black;
+}
+
+
+
+
+.logof { 
+    color: rgb(173, 165, 165);
+}
+.footersocail { 
+    display: inline-block;
+    color: #818080;
+}
+footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

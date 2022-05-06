@@ -18,9 +18,7 @@ nav a{
     width: 12% !important;
     border-color: #117dbc00;
 }
-.footer-logo{
-    width: 50%;
-}
+
 
 .bold{
     font-weight: bold;
@@ -176,4 +174,17 @@ nav a{
 #title{
     position: relative;
     right: -200px;
+}
+
+.logof { 
+    color: rgb(173, 165, 165);
+}
+.footersocail { 
+    display: inline-block;
+    color: #818080;
+}
+footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
