@@ -1,0 +1,195 @@
+.logoImg{
+    width: 12% !important;
+    border-color: #117dbc00 !important;
+   
+}
+
+.card{
+    width: 25rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+    margin: 20px 40px;
+}
+
+
+.container-fluid{
+    margin-left: 3%;
+}
+.shadow{
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.4) !important; 
+}
+.card{
+    position: relative;
+    left: -200px;
+}
+.card{
+    border: 5px solid;
+  
+    border-image: 
+    linear-gradient(
+        #125488,#2A93D5,#37caec) 1 ;
+      animation: rotate 2.5s ease-in infinite;
+    
+}
+@keyframes rotate {
+    50%{
+        border-image:
+        linear-gradient(
+            360deg,  #125488,#2A93D5,#37caec) 1 ;
+    }
+}
+
+.card-title{
+    color: #117DBC;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-subtitle{
+    font-weight: bold;
+
+}
+.card:hover{
+    box-shadow:5px 12px 20px 7px rgba(16, 57, 118, 0.4) !important; 
+    transform: scale(1.1);
+    transition: 0.6s;
+     background-color: #8dc9eb;
+    color: white !important; 
+   }
+.card  img{
+    border: 5px solid #117dbc;
+}
+.footer-logo{
+    border: none !important;
+}
+.card-image img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.line{
+    line-height: 5px;
+}
+
+.btn{
+    margin-left: 25% ;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 13px;
+    border: 3px solid #117dbc;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: white;
+    color: #117dbc;
+    transition: 0.6s;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.w-60{
+    width: 40%;
+}
+
+.card img{
+    width:100% !important;
+    height: 80% !important;
+}
+
+.bg-primary{
+    background-color: #117dbc;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    padding-bottom: 15%;
+    
+}
+.logo:hover{
+    font-size: 25px;
+}
+
+.bold{
+    font-weight: bold;
+}
+.size-10{
+    font-size: 12px;
+}
+
+.bg-color{
+    background-color: #117dbc;
+    color: white;
+}
+a:hover{
+    font-size: 23px;
+}
+
+.bg{
+    background-color: #FB9700;
+    padding: 1px;
+   
+}
+
+@media only screen and (max-width: 500px) {
+    
+     .w-xs-80{
+         width : 80%
+     }
+ }    
+ 
+ @media only screen and (min-width: 700px) {
+      .w-md-45{
+          width : 45%;
+      }
+      
+  }
+
+
+  .rating-css{
+    color: #ffe400;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px ;
+    
+    
+}
+.rating-css input{
+    display: none;
+
+}
+.rating-css input + label{
+    font-size: 40px;
+    text-shadow: 1px 1px 0 #ffe400;
+    margin-left: 5%;
+}
+
+.rating-css input:checked + label ~ label{
+    color: #838383;
+}
+
+.rating-css label:active{
+    transform: scale(0.8);
+    transition: 0.9 ease;
+}
+
+
+.img1 , .img2{
+    border: none;
+}
+
+
+.logof { 
+    color: rgb(173, 165, 165);
+}
+.footersocail { 
+    display: inline-block;
+    color: #818080;
+}
+footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
