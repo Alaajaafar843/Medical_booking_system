@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Notification</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../Images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-navicon" style="color:#fff; font-size:40px;"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+                <span class="navbar-text">
+                    <ul class="list navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="" class="nav-link active help-create">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link active help-create">Doctors</a></li>
+                        <li class="nav-item"><a href="" class="nav-link active help-create">Contact Us</a></li>
+                        <li class="nav-item"><a href="" class="nav-link active help-create">Hello!Name</a></li>
+                        <li class="nav-item">
+                            <div class="icon" onclick="toggleNotifi()">
+                                <img src="../Images/bell.png" alt="" style="margin-top: -8px;">
+                                <!--<span>17</span>-->
+                            </div>
+                            <div class="notifi-box" id="box" style="display: none;">
+                                <h2>Notifications:<span></span></h2>
+                                <div class="notifi-item"  id="1">
+                                    <img src="../Images/avatar1.png" alt="img">
+                                    <p id="open-popup-btn-1">Dr Patrick</p>
+                                    <button type="button" class="btn-close close" aria-label="Close" id="rm-1" style="margin-left: 110px;margin-top: -20px;"></button>
+                                    
+
+                                </div>
+                                <div class="notifi-item" id="2">
+                                    <img src="../Images/avatar2.png" alt="img">
+                                    <p  id="open-popup-btn-2">Dr Alex</p>
+                                    <button type="button" class="btn-close close" aria-label="Close" id="rm-2" style="margin-left: 130px;margin-top: -20px;"></button>
+
+                                </div>
+                                <div class="notifi-item" id="3">
+                                    <img src="../Images/avatar3.png" alt="img">
+                                    <p id="open-popup-btn-3">Dr Joe</p>
+                                    <button type="button" class="btn-close close" aria-label="Close" id="rm-3" style="margin-left: 135px;margin-top: -20px;"></button>
+                                </div>
+                        </li>
+                        
+                       
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="popup center" id="popup-1">
+
+        <button type="button" class="btn-close close" aria-label="Close" id="x"></button>
+        <div class="title">
+            Your appoitment request is accepted
+        </div>
+        <div class="description">
+            <h4>Hello Ali</h4>
+            your appoitment has been accepted.We look forward to seeing you
+            <div>
+                <div>
+                    <h6>4:00 Pm,Fri,June30,2022</h6>
+                    <h6>Price:30$</h6>
+                    <h6>Video call</h6>
+                </div>
+                <h4>Thank You</h4>
+                <h4>Dr Patrick</h4>
+            </div>
+        </div>
+
+        <div class="dismiss-btn ">
+            <button id="dismiss-popup-btn-1">
+                Modify
+            </button>
+            <button id="dismiss-popup-btn-2" class="color">
+                Delete
+            </button>
+        </div>
+
+    </div>
+
+    <div class="popup center" id="popup-2">
+        
+        <button type="button" class="btn-close close" aria-label="Close" id="xx"></button>
+        
+        <div class="title">
+            Your appoitment request is modified
+        </div>
+        <div class="description">
+            <h4>Hello Ali</h4>
+            Your appoitment has been Modified.We look forward to take appoitment agian or accepted.
+            <div>
+                <div>
+                    <h6>4:00 Pm,Fri,June30,2022</h6>
+                    <h6>Price:30$</h6>
+                    <h6>Video call</h6>
+                </div>
+                <h4>Thank You</h4>
+                <h4>Dr Alex</h4>
+            </div>
+        </div>
+
+        <div class="dismiss-btn ">
+            <button id="dismiss-popup-btn-1-2">
+                Accept
+            </button>
+            <button id="dismiss-popup-btn-2-2" class="color">
+                Take Appoitment
+            </button>
+        </div>
+
+    </div>
+    
+    <div class="popup center" id="popup-3">
+        
+        <button type="button" class="btn-close close" aria-label="Close" id="xxx"></button>
+        
+        <div class="title">
+            Your appoitment request is rejected
+        </div>
+        <div class="description">
+            <h4>Hello Ali</h4>
+            Your appoitment has been Refused.We look forward to appointment again
+            <div>
+                <div>
+                    <h6>4:00 Pm,Fri,June30,2022</h6>
+                    <h6>Price:30$</h6>
+                    <h6>Video call</h6>
+                </div>
+                <h4>Thank You</h4>
+                <h4>Dr Joe</h4>
+            </div>
+        </div>
+
+        <div class="dismiss-btn ">
+            
+            <button id="dismiss-popup-btn-1-3" class="color">
+                Take Appoitment
+            </button>
+        </div>
+
+    </div>
+
+
+    <script src="notification.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+const form = document.querySelector('#create-account-form');
+const passwordInput = document.querySelector('#password');
+const confirmPasswordInput = document.querySelector('#confirm-password');
+form.addEventListener('submit', (event)=>{
+    
+    validateForm();
+    console.log(isFormValid());
+    if(isFormValid()==true){
+        form.submit();
+     }else {
+         event.preventDefault();
+     }
+
+});
+
+function isFormValid(){
+    const inputContainers = form.querySelectorAll('.form__div');
+    let result = true;
+    inputContainers.forEach((container)=>{
+        if(container.classList.contains('error')){
+            result = false;
+        }
+    });
+    return result;
+}
+
+function validateForm() {
+
+
+
+//PASSWORD
+    if(passwordInput.value.trim()==''){
+        setError(passwordInput, 'Password can not be empty');
+    }else if(passwordInput.value.trim().length <6 || passwordInput.value.trim().length >20){
+        setError(passwordInput, 'Password min 6 max 20 charecters');
+    }else {
+        setSuccess(passwordInput);
+    }
+
+     //CONFIRM PASSWORD
+     if(confirmPasswordInput.value.trim()==''){
+        setError(confirmPasswordInput, 'Password can not be empty');
+    }else if(confirmPasswordInput.value !== passwordInput.value){
+        setError(confirmPasswordInput, 'Password does not match');
+    }else {
+        setSuccess(confirmPasswordInput);
+    }
+
+    
+}
+function setError(element, errorMessage) {
+    const parent = element.parentElement;
+    if(parent.classList.contains('success')){
+        parent.classList.remove('success');
+    }
+    parent.classList.add('error');
+    const paragraph = parent.querySelector('p');
+    paragraph.textContent = errorMessage;
+}
+
+function setSuccess(element){
+    const parent = element.parentElement;
+    if(parent.classList.contains('error')){
+        parent.classList.remove('error');
+    }
+    parent.classList.add('success');
+}
