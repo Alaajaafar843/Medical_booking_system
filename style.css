@@ -256,6 +256,10 @@ hr{
     font-size: 22px;
     font-weight: 700;
 }
+.dr-card-button a {
+    text-decoration: none;
+    color: white;
+}
 .about {
     color: white;
     padding: 35px;
