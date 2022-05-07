@@ -1,0 +1,161 @@
+body { 
+    background-image: linear-gradient(
+        to bottom, 
+        #117DBC 0%,
+        #117DBC 10%,
+        #fff 10%,
+        #fff 100%
+    );
+    min-height: 100vh;
+}
+.navcolor { 
+    background-color: #117DBC !important;
+}
+.nav-link { 
+    color: #fff !important;
+}
+nav ul li a { 
+    padding-left: 40px !important;
+}
+.nav-link:hover { 
+    color: #4ba5da !important;
+}
+.navloat { 
+    float: right !important;
+    margin-left: 50%;
+}
+.blan { 
+    height: 30px;
+    background-color: #fff;
+}
+.tr1 { 
+    background-color: #117DBC;
+}
+.hid { 
+    background-color: #fff;
+}
+.tdtext { 
+    padding-left: 20px;
+    border: 1px solid rgb(173, 164, 164);
+    height: 50px;
+}
+.paratext { 
+    color: #fff;
+    font-family: monospace;
+    padding-left: 20px !important;
+}
+.admin { 
+    color: #FF9900;
+}
+.patient { 
+    color: #fff;
+    font-family: 'Sen', sans-serif;
+}
+.ppimg { 
+
+    width: 100%;
+}
+.blan2 { 
+    height: 10px;
+}
+.name { 
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    font-weight: 400;
+    padding-left: 20px !important;
+    cursor: pointer;
+}
+.imgrat { 
+    width: 50%;
+}
+.rat { 
+    background-color: #E5E5E5;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Sen', sans-serif;
+}
+.rec { 
+    width: 40%;
+    margin-right: 20px;
+    font-family: 'Sen', sans-serif;
+    color: #00950F;
+    padding-left: 50px !important;
+}
+* { 
+    font-family: 'Sen', sans-serif;
+}
+.sectable { 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.prof { 
+    text-decoration: none;
+    color: #FF9900;
+    padding-left: 10px !important;
+    
+}
+.prof:hover { 
+    color: gold;
+}
+.prof1 { 
+    text-decoration: none;
+    color: white;
+    padding-left: 10px !important;
+}
+.prof1:hover { 
+    color: purple;
+}
+.feed { 
+    padding-left: 80px !important;
+    padding-top: 10px !important;
+}
+.footerhr { 
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logof { 
+    color: rgb(173, 165, 165);
+    font-size: 13px;
+    padding: 10px 0px 0px 0px;
+}
+.logof span { 
+    margin-left: 7px !important;
+}
+.footersocail { 
+    display: inline-block;
+    color: #818080;
+}
+footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img2 { 
+    cursor: pointer;
+}
+.name:hover { 
+    color: #117DBC;
+   
+}
+@media screen and (max-width: 560px) {
+    footer { 
+        transform: scale(0.9); 
+    }
+    .ppimg { 
+        transform: scale(.7);
+    }
+    .dxda { 
+        margin-left: 80px !important;
+        
+    }
+    .messageDiv { 
+        margin-top: 40px !important;
+    }
+    .logof { 
+        color: #fff;
+    }
+}
