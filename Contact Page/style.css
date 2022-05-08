@@ -8,6 +8,7 @@ body {
     );
     min-height: 100vh;
 }
+
 .navcolor { 
     background-color: #117DBC !important;
 }
@@ -22,7 +23,7 @@ body {
     margin-left: 50%;
 }
 nav li a { 
-    padding-left: 40px !important;
+    padding-left: 20px !important;
 }
  .wrapper { 
      background-color: #fff;
