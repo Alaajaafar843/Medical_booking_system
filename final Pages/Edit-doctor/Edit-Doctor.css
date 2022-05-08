@@ -4,6 +4,9 @@ body{
 .logoImg{
     width: 10%;
 }
+nav{
+    background-color: #117dbc;
+}
 
 .bg-primary{
     background-color: #117dbc;

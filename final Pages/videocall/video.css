@@ -1,4 +1,6 @@
-
+nav{
+    background-color: #117DBC;
+}
 
 .bg-primary{
     background-color: #117dbc;
@@ -383,18 +385,37 @@ input[type="datetime-local"]{
   }
   .img1{
       margin-left: 25% !important;
+      width: 50%;
+      height: 50%; 
+      margin:10% 25%; 
+      border-bottom: 10px solid black; 
+      border-width: 150%;
     
   }
   .img2{
       margin-left: -23% !important;   
-    
+      width: 50%;
+     height: 50%; 
+     margin:10% 25%; 
+     border-bottom: 10px solid black; 
+     border-width: 150%;
   }
   .img3{
       margin-left: -23% !important;
+      width: 50%;
+      height: 50%; 
+      margin:10% 25%; 
+      border-bottom: 10px solid black; 
+      border-width: 150%;
     
   }
   .img4{
       margin-left: -23% !important;
+      width: 50%;
+      height: 50%; 
+      margin:10% 25%; 
+      border-bottom: 10px solid black; 
+      border-width: 150%;
     
   }
   

@@ -6,6 +6,9 @@ nav a{
     text-decoration: none;
     padding-bottom: 15%;   
 }
+nav{
+    background-color: #117dbc;
+}
  nav a:hover{
     font-size: 25px;
 }

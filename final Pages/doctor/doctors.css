@@ -3,6 +3,9 @@
     border-color: #117dbc00 !important;
    
 }
+header{
+    background-color: #117DBC;
+}
 
 .card{
     width: 25rem;

@@ -8,6 +8,9 @@
     transition: 0.5s;
     
 }
+nav{
+    background-color: #117dbc;
+}
 nav a:hover{
 font-size: 25px;
 }
