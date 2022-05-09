@@ -4,20 +4,30 @@ const passwordInput = document.querySelector('#password');
 let check1=false;
 let check2=false;
 let user;
-form.addEventListener('submit', (event)=>{
-    
-    validateForm();
-    console.log(isFormValid());
-    if(isFormValid()==true){
-        form.submit();
-        if(user=="Doctor" || user=="Patient"){
-        alert("Hello "+user);
-        }
-     }else {
-         event.preventDefault();
-     }
 
-});
+    
+function CLICKME(){
+    validateForm()
+    if(isFormValid()==true){
+        if(user=="Doctor"){
+            x = confirm("Go to Home Doctor Page")
+            if(x==true){
+             location.href = "../dr.home/index.html"
+            }
+        }
+       else if(user=="Patient"){
+        y= confirm("Go to Home Patient Page");
+        if(y==true){
+         location.href = "../Home.html"
+        }
+     }
+     else{
+        alert("Please Choose Account Type");
+    }
+    
+    }
+}
+
 
 function isFormValid(){
     const inputContainers = form.querySelectorAll('.form__div');
@@ -130,9 +140,7 @@ document.getElementById("open-popup-btn-1").addEventListener("click",function(){
   if(user=="Doctor" || user=="Patient"){
       return;
   }
-  else{
-      alert("Please Choose Account Type");
-  }
+ 
       
       });
 

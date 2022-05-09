@@ -1,4 +1,6 @@
 
+
+ 
 let fn = document.getElementById("fullname");
 let error_Fn =document.getElementById("error_fullName");
 
