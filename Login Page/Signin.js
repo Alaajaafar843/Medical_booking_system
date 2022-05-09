@@ -1,12 +1,18 @@
 const emailInput = document.querySelector('#email');
 const form = document.querySelector('#create-account-form');
 const passwordInput = document.querySelector('#password');
+let check1=false;
+let check2=false;
+let user;
 form.addEventListener('submit', (event)=>{
     
     validateForm();
     console.log(isFormValid());
     if(isFormValid()==true){
         form.submit();
+        if(user=="Doctor" || user=="Patient"){
+        alert("Hello "+user);
+        }
      }else {
          event.preventDefault();
      }
@@ -32,9 +38,12 @@ function validateForm() {
         setError(emailInput, 'Provide email address');
     }else if(isEmailValid(emailInput.value)){
         setSuccess(emailInput);
+        check1=true;
     }else{
         setError(emailInput, 'Provide valid email address');
     }
+
+    //PASSWORD
 
     if(passwordInput.value.trim()==''){
         setError(passwordInput, 'Password can not be empty');
@@ -42,6 +51,7 @@ function validateForm() {
         setError(passwordInput, 'Password min 6 max 20 charecters');
     }else {
         setSuccess(passwordInput);
+        check2=true;
     }
 
     
@@ -104,13 +114,27 @@ document.getElementById("open-popup-btn-1").addEventListener("click",function(){
 
 
   document.getElementById("doctor").addEventListener("click",function(){
+      user="Doctor";
   document.getElementById("hello").innerHTML='<br>'+"Hello Doctor!";
   });
 
   document.getElementById("patient").addEventListener("click",function(){
+      user="Patient"
     document.getElementById("hello").innerHTML='<br>'+"Hello Patient!";
     });
 
+    document.getElementById("sub").addEventListener("click",function(){
+     // if( isFormValid()==false){
+//alert("Done");
+  //    
+  if(user=="Doctor" || user=="Patient"){
+      return;
+  }
+  else{
+      alert("Please Choose Account Type");
+  }
+      
+      });
 
   /*
 //validation for forget password
