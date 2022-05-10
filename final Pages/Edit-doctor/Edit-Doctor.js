@@ -160,8 +160,6 @@ const error_mail = document.getElementById("error_mail");
    
 }
 
- 
-
 
 
 
