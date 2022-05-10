@@ -293,69 +293,112 @@ cvv.onkeydown = function () {
  const meetingId =document.getElementById("meting-id")
  const  meetPassword = document.getElementById("meet-password")
 
-function check(){
 
-    if (fn.value == "" ){
-        error_Fn.innerHTML ="can't be empty"; 
-        error_Fn.style.color= "red"
-        fn.focus()
-    }
 
-    if (em.value == "" ){
-        error_Em .innerHTML ="can't be empty"; 
-        error_Em.style.color= "red"
-        em.focus()
-    }
-
-    if (address.value == "" ){
-        error_address.innerHTML ="can't be empty";
-        error_address.style.color= "red" 
-        address.focus()
-    }
-
-    if (city.value == "" ){
-        error_city.innerHTML ="can't be empty"; 
-        error_city.style.color= "red"
-        city.focus()
-    }
-
-    if (state.value == "" ){
-        error_state.innerHTML ="can't be empty"; 
-        error_state.style.color= "red"
-        state.focus()
-    }
-    if (zipCode.value == "" ){
-        error_zipCode.innerHTML ="can't be empty"; 
-        error_zipCode.style.color= "red"
-        zipCode.focus()
-    }
-    if (cardName.value == "" ){
-        error_cardName.innerHTML ="can't be empty"; 
-        error_cardName.style.color= "red";
-        cardName.focus()
-    }
-    if (cardNumber.value == "" ){
-        error_cardNumber.innerHTML ="can't be empty"; 
-        error_cardNumber.style.color= "red";
-        cardNumber.focus()
-    }
-    if (month.value == "" ){
-        error_month.innerHTML ="can't be empty"; 
-        error_month.style.color= "red"
-        month.focus()
-    }
-    if (year.value == "" ){
-        error_year.innerHTML ="can't be empty"; 
-        error_year.style.color= "red"
-        year.focus()
-    }
-    if (cvv.value == "" ){
-        error_cvv.innerHTML ="can't be empty"; 
-        error_cvv.style.color= "red"
-        cvv.focus()
-    }
-
-  
-
-}
+ function check() {
+ 
+     if (fn.value == "") {
+         error_Fn.innerHTML = "can't be empty";
+         error_Fn.style.color = "red"
+         fn.focus()
+     }
+ 
+     if (em.value == "") {
+         error_Em.innerHTML = "can't be empty";
+         error_Em.style.color = "red"
+         em.focus()
+     }
+ 
+     if (address.value == "") {
+         error_address.innerHTML = "can't be empty";
+         error_address.style.color = "red"
+         address.focus()
+     }
+ 
+     if (city.value == "") {
+         error_city.innerHTML = "can't be empty";
+         error_city.style.color = "red"
+         city.focus()
+     }
+ 
+     if (state.value == "") {
+         error_state.innerHTML = "can't be empty";
+         error_state.style.color = "red"
+         state.focus()
+     }
+     if (zipCode.value == "") {
+         error_zipCode.innerHTML = "can't be empty";
+         error_zipCode.style.color = "red"
+         zipCode.focus()
+     }
+     if (cardName.value == "") {
+         error_cardName.innerHTML = "can't be empty";
+         error_cardName.style.color = "red";
+         cardName.focus()
+     }
+     if (cardNumber.value == "") {
+         error_cardNumber.innerHTML = "can't be empty";
+         error_cardNumber.style.color = "red";
+         cardNumber.focus()
+     }
+     if (month.value == "") {
+         error_month.innerHTML = "can't be empty";
+         error_month.style.color = "red"
+         month.focus()
+     }
+     if (year.value == "") {
+         error_year.innerHTML = "can't be empty";
+         error_year.style.color = "red"
+         year.focus()
+     }
+     if (cvv.value == "") {
+         error_cvv.innerHTML = "can't be empty";
+         error_cvv.style.color = "red"
+         cvv.focus()
+     }
+ 
+     else {
+        
+     
+        
+         const newPatients = JSON.parse(localStorage.getItem("doctors"))
+         var patients = newPatients
+         if (!patients) patients = []
+ 
+         patients.push({
+             
+             FirstName: fn.value,
+             Email: em.value,
+             address : address.value,
+             city : city.value,
+             state : state.value,
+             zipCode : zipCode.value,
+             cardName:cardName.value,
+             cardNumber: cardNumber.value,
+             month:month.value,
+             year:year.value,
+             cvv : cvv.value
+             
+         
+         });
+        
+         if(localStorage.length==0){
+             localStorage.setItem("doctors", JSON.stringify(patients))
+             return
+ 
+         }
+         
+         for(i=0;i<localStorage.length;i++){
+             if(patients[i].Email == em.value || patients[i].cardName==cardName.value || patients[i].cardNumber==cardNumber.value || patients[i].cvv==cvv.value  ){
+                       alert("enter a correct Data")
+             }
+             else{
+ 
+                 localStorage.setItem("doctors", JSON.stringify(patients))
+ 
+             }
+         }
+ 
+     }
+ }
 

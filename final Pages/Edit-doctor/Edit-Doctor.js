@@ -107,6 +107,29 @@ const error_mail = document.getElementById("error_mail");
     const error_city = document.getElementById("error_city");
     
     function save(){
+
+        if(mail.value !="" || tel.value !="" ){
+            const newPatients = JSON.parse(localStorage.getItem("doctors"))
+            var patients = newPatients
+            if(!patients) patients = []
+        
+        patients.push({
+        
+        email : mail.value,
+        tel : tel.value,
+        lon: lon.value,
+        alt : alt.value,
+        state: state.value,
+        country : country.value,
+        city : city.value,
+        street:street.value
+        
+        });
+        
+        
+        localStorage.setItem("doctors",JSON.stringify(patients))
+        }
+        
  
 
    if (state.value!="Select State" && country.value=="select country"){
@@ -133,6 +156,7 @@ const error_mail = document.getElementById("error_mail");
        street.innerHTML=""
        street.className="none"
    }
+  
    
 }
 
