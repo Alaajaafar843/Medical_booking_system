@@ -175,6 +175,11 @@
   #comment-box .user-cmnt {
     float: right;
   }
+
+  .login {
+    width: 300px;
+    margin: 100px auto;
+  }
   /* #comment-box:hover{
     transform: scale(1.1);
   } */
