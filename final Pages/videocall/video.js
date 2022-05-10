@@ -31,6 +31,7 @@ fn.onkeyup = function (){
 
 let em =  document.getElementById("email");
 let error_Em = document.getElementById("error_email");
+const regexo = /^([\.\_a-zA-Z0-9]+)@((gmail+)||(hotmail+)||(icloud+))\.(com)$/;
 
 em.onblur = function (){
     if (em.value==""){
@@ -40,12 +41,8 @@ em.onblur = function (){
     }
 }
 
-em.onkeydown = function(){
-      const regex = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,8}$/;
-      const regexo = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,3}\.[a-zA-Z]{1,3}$/;
-      
-      if (regex.test(em.value) || regexo.test(em.value)) {
-
+em.onkeyup= function(){
+      if (regexo.test(em.value)){
        error_Em.innerHTML = "your email is valid";
        error_Em.style.color="green"; 
        em.className = "border-green" 
@@ -59,7 +56,6 @@ em.onkeydown = function(){
         em.className = "border-red"
     }
 }
-
 
 
 let address = document.getElementById("address");

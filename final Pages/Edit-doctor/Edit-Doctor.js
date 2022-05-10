@@ -32,31 +32,30 @@ const loadFile = function(event) {
 
 
 
-  const  mail = document.getElementById("E-mail");
-  const regex = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,8}$/;
-  const regexo = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,3}\.[a-zA-Z]{1,3}$/;
-   const error_mail = document.getElementById("error_mail");
+const  mail = document.getElementById("E-mail");
+const regexo = /^([\.\_a-zA-Z0-9]+)@((gmail+)||(hotmail+)||(icloud+)).(com+)$/;
+const error_mail = document.getElementById("error_mail");
 
 
-   
-  
  
-   mail.onkeyup = function (){
-    if (regex.test(mail.value) || regexo.test(mail.value)){
-        error_mail.innerHTML ="success"
-        error_mail.className = "success"
-        mail.className ="border-green"
-        mail.focus()      
-    }
 
-    else{
-        error_mail.innerHTML ="Please enter a correct email"
-        error_mail.className = "error"
-        mail.className ="border-red"
-        mail.focus()  
 
-    }
-   }
+ mail.onkeyup = function (){
+  if ( regexo.test(mail.value)){
+      error_mail.innerHTML ="success"
+      error_mail.className = "success"
+      mail.className ="border-green"
+      mail.focus()      
+  }
+
+  else{
+      error_mail.innerHTML ="Please enter a correct email"
+      error_mail.className = "error"
+      mail.className ="border-red"
+      mail.focus()  
+
+  }
+ }
 
    const tel = document.getElementById("Tel");
    const error_tel = document.getElementById("error_tel");
