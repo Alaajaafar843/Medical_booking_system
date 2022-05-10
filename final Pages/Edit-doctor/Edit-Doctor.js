@@ -1410,5 +1410,5 @@ window.onload = function () {
             districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
         }
     }
-}
+} 
 
