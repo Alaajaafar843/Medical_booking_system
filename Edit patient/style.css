@@ -31,173 +31,27 @@ header {
 nav li a { 
     padding-left: 40px !important;
 }
-.sideL { 
-    width: 30%;
-    text-align: center;
-    font-size: 22px;
+.upup { 
+    margin-top: 20px !important;
 }
-table, tr, td { 
-    border: 1px solid rgb(189, 185, 185);
-    border-collapse: collapse;
-}
-.sideR { 
-    padding-right: 20px;
-}
-.btnchange { 
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 0px solid black;
-    background-color: #117DBC;
-    color: white;
-    border-radius: 10px;
-}
-table { 
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-.inptperso { 
-    width: 30%;
-    margin-left: 100px;
-    height: 34px;
-    border-radius: 12.5px;
-    border: 1px solid black;
-    text-align: center;
-    margin-top: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 20px;
-    animation: fadeIn 3s;
-}
-.inptcol2 { 
-    width: 30%;
-    margin-left: 50px;
-    height: 34px;
-    border-radius: 12.5px;
-    border: 1px solid black;
-    text-align: center;
-    margin-top: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    animation: fadeIn 3s;
-}
-.btnsave { 
-    position: absolute;
-    color: white;
-    background-color: #117DBC;
-    border-radius: 50px;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 20px 20px 20px 20px;
-    border: 0px solid;
-    margin-top: 20px;
-    margin-left: 80%;
-    cursor: pointer;
-    
+.setnav { 
+    color: #117DBC !important;
 }
 .logof { 
-    color: rgb(173, 165, 165);
+    color: grey;
+    font-size: small;
+    padding-left: 20px !important;
 }
-.footersocail { 
-    display: inline-block;
-    color: #818080;
+.real-file { 
+    display: none;
 }
-footer { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.img2 { 
-    cursor: pointer;
-}
-.btnsave:active { 
-    background-color: #FF9900;
-}
-.inptcol2:hover { 
-    border: 1px solid #117DBC;
-}
-.inptperso:hover { 
-    border: 1px solid #117DBC; 
-}
-.inptperso:active { 
-    border: 1px solid #FF9900 !important;
-}
-/*
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to { 
-        opacity: 1;
-    }
-}
-@keyframes slideIn {
-    0% { 
-        transform: skewX(53deg) translateX(-500px);
-        opacity: 0;
-    }
-    60% { 
-        transform: translateX(0px);
-    }
-    62% { 
-        transform: skewX(0deg) translateX(30px);
-    }
-    70% { 
-        transform: skew(-20deg);
-        opacity: 1;
-    }
-    80% { 
-        transform: skew(0deg) translate(0);
-    }
-    90% { 
-        transform: skew(-5deg);
-    }
-    100% { 
-        transform: skew(0deg);
-    }
-}
+@media screen and (max-width: 500px) {
 
-*/
-@media screen and (max-width: 500px){
-    body { 
-        background-image: linear-gradient(
-            to bottom, 
-            #117DBC 0%,
-            #117DBC 10%,
-            #fff 10%,
-            #fff 100%
-        );
-        min-height: 100vh;
+    .marque { 
+        width: 0px !important;
     }
-    .sideL { 
-        font-size: 18px;
-        padding: 0px 10px 0px 10px;
+    .upup { 
+        margin-top: 50px !important;
     }
-    .btnchange { 
-        padding: 5px;
-        margin-bottom: 10px;
-        margin-left: 120px;
-    }
-    .inptperso { 
-        width: 70%;
-        display: flex;
-        margin-left: 10px;
-    }
-    .inptcol2 { 
-        width: 70%;
-        display: flex;
-        margin-left: 10px;
-        margin-bottom: 10px;
-    }
-    .btnsave { 
-        margin-top: 40px;
-        margin-left: 35%;
-    }
-    table { 
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-    }
-    .logof { 
-        font-size: 14px;
-    }
-    
+
 }
