@@ -45,6 +45,12 @@ nav li a {
 .real-file { 
     display: none;
 }
+.error { 
+    border-color: red !important;
+}
+.success { 
+    border-color: green !important;
+}
 @media screen and (max-width: 500px) {
 
     .marque { 

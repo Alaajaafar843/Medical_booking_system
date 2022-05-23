@@ -5,7 +5,7 @@ const messages = document.getElementById('messages');
 const btn = document.getElementById('btn');
 
 { 
-    function validation () { 
+    function validation (e) { 
         
         if(uname.value === "") { 
         uname.classList.add("error")
@@ -31,7 +31,7 @@ const btn = document.getElementById('btn');
          messages.classList.add("success")
         }
         
-        
+        e.preventDefault();
     }
     btn.addEventListener('click', validation)
 }
