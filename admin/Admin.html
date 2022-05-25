@@ -19,7 +19,7 @@
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
           <li><a class="dropdown-item" href="#"><i class="fa fa-plane" aria-hidden="true"> Visit site</i></a></li>
-          <li><a class="dropdown-item" href="#"><i class="fa fa-power-off" aria-hidden="true"></i> Log out</a></li>
+          <li><a class="dropdown-item" href="#" id="logout"><i class="fa fa-power-off" aria-hidden="true"></i> Log out</a></li>
         </ul>
       </div>
     <a href="Admin.html">Dashboard</a>
@@ -53,27 +53,8 @@
                 <h5 class="card-title">
                     <i class="fa fa-users" aria-hidden="true"></i> Last 5 registered users
                 </h5>
-               <ul class="card-text">
-                    <li>
-                        Alaa Jaafar
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i></span>
-                    </li>
-                    <li>
-                        Mahdi roumani
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i></span>
-                    </li>
-                    <li>
-                        Hassan chakkour
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i></span>
-                    </li>
-                    <li>
-                        Ali al malla
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i></span>
-                    </li>
-                    <li>
-                        Hussein
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i></span>
-                    </li>
+               <ul class="card-text" id="lastPatients">
+                    
                </ul>
             </div>
         </div>
@@ -82,27 +63,8 @@
                 <h5 class="card-title">
                    <i class="fa fa-medkit" aria-hidden="true"></i> Last 5 registered Doctors
                 </h5>
-               <ul class="card-text">
-                    <li>
-                        Alaa Jaafar
-                        <span><a href="" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a> <a href="Edit_dr.html"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
-                    </li>
-                    <li>
-                        Mahdi roumani
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i></span>
-                    </li>
-                    <li>
-                        Hassan chakkour
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i></span>
-                    </li>
-                    <li>
-                        Ali al malla
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i></span>
-                    </li>
-                    <li>
-                        Hussein
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i></span>
-                    </li>
+               <ul class="card-text" id="listDoctors">
+                    
                </ul>
             </div>
         </div>
@@ -200,6 +162,9 @@ function myFunction() {
              alert("Are you sure ?");
          }
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./backendScript/logout.js"></script>
+  <script src="./backendScript/getPatients.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
