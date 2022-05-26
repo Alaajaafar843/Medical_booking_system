@@ -32,7 +32,7 @@ nav li a {
     padding-left: 40px !important;
 }
 .upup { 
-    margin-top: 20px !important;
+    margin-top: 50px !important;
 }
 .setnav { 
     color: #117DBC !important;
@@ -51,13 +51,23 @@ nav li a {
 .success { 
     border-color: green !important;
 }
+#errorconfirmpassword, 
+#errornewpassword,
+#errorpassword,
+#errorname,
+#erroremail,
+#errorlastname
+    { 
+    color: crimson;
+    font-size: small;
+}
 @media screen and (max-width: 500px) {
 
     .marque { 
         width: 0px !important;
     }
     .upup { 
-        margin-top: 50px !important;
+        margin-top: 80px !important;
     }
 
 }

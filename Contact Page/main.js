@@ -1,44 +1,43 @@
 const form = document.getElementById('form');
-const uname = document.getElementById('name');
+const uname = document.getElementById('inptName');
 const email = document.getElementById('email');
 const messages = document.getElementById('messages');
 const btn = document.getElementById('btn');
 
-{ 
-    function validation (e) { 
+ 
+    function validation(e) { 
         
-        if(uname.value === "") { 
-        uname.classList.add("error")
+        if ( uname.value.length > 0){
+            uname.classList.add("success");
         }
-        if(uname.value !== "") { 
-        uname.classList.remove("error")
-        uname.classList.add("success")
-        
+        else { 
+            uname.classList.add("error");
+            e.preventDefault();
         }
-        if(email.value === "") { 
-        email.classList.add("error")
+        if ( email.value.length > 0){
+            email.classList.add("success");
         }
-        if(email.value !== "") { 
-        email.classList.remove("error")
+        else { 
+            email.classList.add("error");
+            e.preventDefault();
         }
-        
-        
-        if(messages.value === "") { 
-        messages.classList.add("error")
+        if ( messages.value.length > 0){
+            messages.classList.add("success");
         }
-        if(messages.value !== "") { 
-         messages.classList.remove("error")
-         messages.classList.add("success")
+        else { 
+            messages.classList.add("error");
+            e.preventDefault();
         }
         
-        e.preventDefault();
+ 
+        
+        // e.preventDefault();
     }
     btn.addEventListener('click', validation)
-}
-{ 
+
+ 
     
-}
-{ 
+
     let input = document.getElementsByTagName('input')
 
     function letterOnly (input) { 
@@ -46,4 +45,3 @@ const btn = document.getElementById('btn');
         uname.value = input.value.replace(restric, "");
     }
     
-}
