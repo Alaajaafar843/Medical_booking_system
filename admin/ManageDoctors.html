@@ -30,81 +30,13 @@
       <div class="content">
             <h1 class="title-dash">Manage Doctors</h1>
             <div class="table-responsive">
-                <table class="table">
+                <table class="table" id="tab">
                     <tr>
                         <th>#ID</th>
                         <th>Name</th>
                         <th>Speciality</th>
-                        <th>Registered Date</th>
+                        <th>Email</th>
                         <th>Action</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Alaa</td>
-                        <td>Cardiologist</td>
-                        <td id="date1"></td>
-                        <td>
-                            <span onclick="myFunction()">
-                                <a href="">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                </a>
-                            </span> 
-                            <span>
-                                <a href="Edit_dr.html">
-                                    <i class="fa fa-bars" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="">
-                                    <i class="fa fa-power-off" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Alaa</td>
-                        <td>Cardiologist</td>
-                        <td id="date2"></td>
-                        <td>
-                            <span><i class="fa fa-trash" aria-hidden="true"></i></span> 
-                            <span><i class="fa fa-bars" aria-hidden="true"></i></span>
-                            <span>
-                                <a href="">
-                                    <i class="fa fa-power-off" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>90</td>
-                        <td>Alaa</td>
-                        <td>Cardiologist</td>
-                        <td id="date3"></td>
-                        <td>
-                            <span><i class="fa fa-trash" aria-hidden="true"></i></span> 
-                            <span><i class="fa fa-bars" aria-hidden="true"></i></span>
-                            <span>
-                                <a href="">
-                                    <i class="fa fa-power-off" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>Alaa</td>
-                        <td>Cardiologist</td>
-                        <td id="date4"></td>
-                        <td>
-                            <span><i class="fa fa-trash" aria-hidden="true"></i></span> 
-                            <span><i class="fa fa-bars" aria-hidden="true"></i></span>
-                            <span>
-                                <a href="">
-                                    <i class="fa fa-power-off" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </td>
                     </tr>
                 </table>
             </div>
@@ -114,17 +46,8 @@
                <a href="Add_Dr.html">Add doctor</a>
             </button>
       </div>
-      <script>
-          let date = new Date().toLocaleDateString();
-         for(i=1 ; i<=4 ;i++){
-             document.getElementById("date"+i).innerHTML = date;
-         }
-
-         function myFunction() {
-             alert("Are you sure ?");
-         }
-      </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="./backendScript/getDrs.js"></script>
       <script src="./backendScript/logout.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

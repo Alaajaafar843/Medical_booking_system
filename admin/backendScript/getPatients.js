@@ -17,7 +17,7 @@ $(document).ready(function () {
             element.First_name +
             `
         <span>
-          <a href="" onclick="myFunction()">
+          <a href="" onclick="del(${element.id} , 'Patient')">
             <i class="fa fa-trash" aria-hidden="true"></i>
           </a>
           <a href="Edit_dr.html?id=` +
@@ -55,7 +55,7 @@ $(document).ready(function () {
             element.Fname +
             `
         <span>
-          <a href="" onclick="myFunction()">
+          <a href="" onclick="del(${element.id} , 'Doctor')">
             <i class="fa fa-trash" aria-hidden="true"></i>
           </a>
           <a href="Edit_dr.html?id=` +
@@ -74,3 +74,21 @@ $(document).ready(function () {
     },
   });
 });
+
+function del(id, type) {
+  $.ajax({
+    url: "dashboardBackend/delete.php",
+    type: "post",
+    dataType: "json",
+    data: {
+      id: id,
+      type: type,
+    },
+    success: function (response) {
+      console.log(response);
+    },
+    error: function (request, data, error) {
+      console.log(request.responseText);
+    },
+  });
+}
