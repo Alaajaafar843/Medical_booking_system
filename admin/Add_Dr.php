@@ -20,7 +20,9 @@ include 'dashboardBackend/connection.php';
     <div class="sidebar">
         <div class="dropdown">
             <a class="active dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                User
+                <script>
+                    document.getElementById("dropdownMenuButton1").innerHTML = sessionStorage.getItem('user')
+                </script>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
@@ -31,7 +33,7 @@ include 'dashboardBackend/connection.php';
         <a href="Admin.html">Dashboard</a>
         <a href="ManageDoctors.php">Doctors</a>
         <a href="ManagePatients.html">Patients</a>
-        <a href="Appointements.html">Appointements</a>
+        <a href="Appointements.php">Appointements</a>
     </div>
 
     <div class="content">
