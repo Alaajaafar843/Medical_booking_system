@@ -22,7 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         );
 
         $type = $_POST['type'];
-        echo ($type);
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
         $email = $_POST['email'];
@@ -35,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $blood = $_POST['blood'];
 
         if ($type == 'Patient') {
-            $stmt = $conn->prepare("INSERT INTO Patient(First_name , last_name , Email , password , gender , dob ,pnumber , location , nationality, bloodType , verification, image) Values (?,?,?,?,?,?,?,?,?,?,?,?)");
+            $stmt = $conn->prepare("INSERT INTO Patient(First_name , last_name , Email , password , gender , dob ,pnumber , location , nationality, bloodType , verification, image,approval) Values (?,?,?,?,?,?,?,?,?,?,?,?,1)");
             $stmt->execute(array($fname, $lname, $email, $password, $gender, $dob, $pnumber, $location, $nationality, $blood, $data['image_source'], $data1['image_source']));
             if ($stmt) {
                 echo json_encode("patient added successfully");
@@ -43,7 +42,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 echo json_encode("could not be added");
             }
         }
-        echo json_encode($data);
     } else {
         echo json_encode("error");
     }

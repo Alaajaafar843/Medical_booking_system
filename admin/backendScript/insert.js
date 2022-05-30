@@ -48,12 +48,11 @@ function insertUser(type) {
       .then((response) => response.text())
       .then((data) => {
         console.log(data);
-        if (data == "patient added successfully") {
-          window.setTimeout(function () {
-            window.location.href =
-              "http://localhost/ESA_PROJECT/admin/ManagePatients.html";
-          }, 1000);
-        }
+
+        window.setTimeout(function () {
+          window.location.href =
+            "http://localhost/ESA_PROJECT/admin/ManagePatients.html";
+        }, 1000);
       })
       .catch((error) => console.log(error));
   }
