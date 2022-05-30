@@ -58,6 +58,7 @@ include 'dashboardBackend/connection.php';
           <th>University</th>
           <th>Major</th>
           <th>Image</th>
+          <th>Action</th>
         </tr>
         <?php
         $stmt = $conn->prepare("SELECT * FROM Doctor");
@@ -74,18 +75,22 @@ include 'dashboardBackend/connection.php';
          <td>' . $row['gender'] . '</td>
          <td>' . $row['location'] . '</td>
          <td>' . $row['speciality'] . '</td>
-         <td><img src="' . $row['resume'] . '"></td>
-         <td><img src="' . $row['degree'] . '"></td>
+         <td><img class="w-50 h-50" src="' . $row['resume'] . '"></td>
+         <td><img class="w-50 h-50" src="' . $row['degree'] . '"></td>
          <td>' . $row['about_me'] . '</td>
          <td>' . $row['dob'] . '</td>
          <td>' . $row['bank_details'] . '</td>
          <td>' . $row['nationality'] . '</td>
-         <td><img src="' . $row['verification'] . '"></td>
+         <td><img class="w-50 h-50" src="' . $row['verification'] . '"></td>
          <td>' . $row['Hour_From'] . '</td>
          <td>' . $row['Hour_To'] . '</td>
          <td>' . $row['university'] . '</td>
          <td>' . $row['university'] . '</td>
-         <td><img src="' . $row['image'] . '"></td>
+         <td><img class="w-50 h-50" src="' . $row['image'] . '"></td>
+         <td>
+         <a class="btn btn-danger" href="dashboardBackend/delete.php?id=' . $row['id'] . '"><i class="fa fa-trash" aria-hidden="true"></i></a>
+         <a class="btn btn-success" href="dashboardBackend/update.php?id=' . $row['id'] . '"><i class="fa fa-bars" aria-hidden="true"></i></a>
+         </td>
        </tr>';
         }
         ?>
@@ -94,11 +99,11 @@ include 'dashboardBackend/connection.php';
 
     <button class="btn btn-primary">
       <i class="fa fa-plus" aria-hidden="true"></i>
-      <a href="Add_Dr.html">Add doctor</a>
+      <a href="Add_Dr.php">Add doctor</a>
     </button>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="./backendScript/getDrs.js"></script>
+  <!-- <script src="./backendScript/getDrs.js"></script> -->
   <script src="./backendScript/logout.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

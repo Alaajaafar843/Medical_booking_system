@@ -25,4 +25,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo json_encode("Could not delete");
         }
     }
+} else {
+    $id = $_GET['id'];
+    $stmt = $conn->prepare("DELETE FROM Doctor WHERE id = ?");
+    $stmt->execute(array($id));
+    if ($stmt) {
+        echo $stmt->rowCount() . " record deleted";
+        echo "<script>
+                window.setTimeout(function() {
+                    window.location = '../ManageDoctors.php';
+                  }, 2000);
+                </script>";
+    } else {
+        echo "Could not delete";
+        echo "<script>
+                window.setTimeout(function() {
+                    window.location = '../ManageDoctors.php';
+                  }, 3000);
+                </script>";
+    }
 }
