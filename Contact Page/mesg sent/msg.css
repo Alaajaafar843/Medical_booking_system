@@ -1,0 +1,16 @@
+body { 
+    background-image: linear-gradient(
+        to bottom, 
+        #117DBC 0%,
+        #117DBC 10%,
+        #fff 10%,
+        #fff 100%
+    );
+    min-height: 100vh;
+}
+.bobo { 
+   margin-top: 2px !important;
+}
+a { 
+    text-decoration: none;
+}
